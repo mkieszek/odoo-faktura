@@ -30,10 +30,8 @@ from openerp.report import report_sxw
 from openerp.osv import osv, fields
 from openerp.tools.translate import _
 from operator import itemgetter, attrgetter
-import pdb
 
 def num2word(n,l="en_US"):
-    pdb.set_trace()
 #    wordtable = ["zer","jed","dwa","trz","czt","pie","sze","sie","osi","dzi"]
     sym={
         "en_US": {
