@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <openerp>
+    <data>
+<!--            id="account_invoices_pl"  -->
+
+        <report
+            auto="False"
+            id="account_invoices_pl"
+            model="account.invoice"
+            name="account_invoice_pl_og.invoice_cirrus"
+            rml="account_invoice_pl_og/report/invoice.rml"
+            string="Faktury"
+            attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
+            usage="default"
+            attachment_use="1"
+            multi="True"/>
+
+
+  </data>
+</openerp>

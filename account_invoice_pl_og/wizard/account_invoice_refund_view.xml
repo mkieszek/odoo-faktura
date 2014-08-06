@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_account_invoice_refund_og" model="ir.ui.view">
+            <field name="name">account.invoice.refund.form.og</field>
+            <field name="model">account.invoice.refund</field>
+            <field name="inherit_id" ref="account.view_account_invoice_refund"/>
+            <field name="arch" type="xml">
+               <xpath expr="/form/group/group[1]" position="replace">
+                <group colspan="2">
+                    <label for="filter_refund"/>
+                    <div>
+                        <field name="filter_refund" class="oe_inline"/>
+                        <p attrs="{'invisible':[('filter_refund','&lt;&gt;','refund_quantity')]}" class="oe_grey">
+                            Zostanie utworzony projekt faktury korygującej z ilością 0. 
+                            Wprowadź ilość, o którą chcesz zmniejszyć ilość z faktury oryginalnej.
+                        </p>
+                        <p attrs="{'invisible':[('filter_refund','&lt;&gt;','refund_value')]}" class="oe_grey">
+                            Zostanie utworzony projekt faktury korygującej z ceną 0. 
+                            Wprowadź cenę, o którą chcesz zmniejszyć cenę z faktury oryginalnej.
+                        </p>
+                        <p attrs="{'invisible':[('filter_refund','&lt;&gt;','cancel')]}" class="oe_grey">
+                            Zostanie utworzona, zatwierdzona i uzgodniona faktura korygująca do 
+                            zera i projekt nowej faktury z tymi samymi danymi do ponownego wystawienia.
+                        </p>
+                        <p attrs="{'invisible':[('filter_refund','&lt;&gt;','modify')]}" class="oe_grey">
+                            Zostanie utworzona, zatwierdzona i uzgodniona faktura korygująca do zera.
+                        </p>
+                    </div>
+                </group>
+               </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

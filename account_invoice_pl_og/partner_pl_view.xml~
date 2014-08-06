@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+<!--
+    <record model="ir.ui.view" id="view_partner_tree_pl">
+        <field name="name">Partners_pl</field>
+        <field name="model">res.partner</field>
+        <field name="type">tree</field>
+        <field name="priority" eval="6"/>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <tree string="Partners"> 
+            <field name="title" position ="replace">
+		<field name="vat"/>
+	    </field>
+        </field>
+    </record>
+
+-->
+<!--  -->
+        <record id="view_partner_tree_pl" model="ir.ui.view">
+            <field name="name">res.partner.tree.pl</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field eval="16" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Contacts" position = "replace">
+                  <tree string="Contacts">
+                    <field name="ref"/>
+                    <field name="name"/>
+                    <field name="vat"/>
+                    <field name="city" select="2"/>
+                    <field name="country" select="2"/>
+                  </tree>
+                </tree>
+            </field>
+        </record>
+<!--  -->
+        <record id="view_partner_form_pl" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="email" position = "after">
+                    <field name="post"/>
+                </field>
+            </field>
+        </record>
+
+</data>
+</openerp>

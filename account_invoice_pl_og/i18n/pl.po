@@ -1,0 +1,576 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: account_pl_cirrus\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2012-01-03 13:56+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Grzegorz Grzelak (Cirrus) <grzegorz.grzelak@cirrus.pl>\n"
+"Language-Team: Cirrus <biuro@cirrus.pl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+
+#. module: account_invoice_pl_og
+#: field:account.invoice.line,invoice_line_gross:0
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Gross"
+msgstr "Brutto"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Bank account:"
+msgstr "Konto:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "):"
+msgstr "):"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Cancelled Invoice"
+msgstr "Faktura anulowana"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:110
+#, python-format
+msgid "Can not %s draft/proforma/cancel invoice."
+msgstr "Nie można %s (korygować) faktury w stanie Projekt/Pro-Forma/Anulowano."
+
+#. module: account_invoice_pl_og
+#: view:res.partner:0
+msgid "Partners"
+msgstr "Partnerzy"
+
+#. module: account_invoice_pl_og
+#: model:ir.module.module,description:account_invoice_pl_og.module_meta_information
+msgid ""
+"\n"
+"    This is the module to manage Polish specific accounting functionality \n"
+"    in Open ERP.\n"
+"\n"
+"    To jest moduł do obsługi specyficznych księgowych wymagań funkcjonalnych\n"
+"    w Polsce.\n"
+"\n"
+"    Dodano:\n"
+"    * Pola Podatek i Brutto do pozycji faktur.\n"
+"    * Do faktury pole id faktury pierwotnej - stosowane do powiązania \n"
+"       faktury korygującej z pierwotną.\n"
+"    * Wydruk faktury sprzedażowej i sprzedażowej korygującej.\n"
+"    * Widok partnerów po numerach NIP\n"
+"    "
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: view:account.invoice.refund:0
+msgid "Korekta do zera: Zostanie utworzona, zatwierdzona i uzgodniona faktura korygująca do zera."
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "VAT No :"
+msgstr "NIP:"
+
+#. module: account_invoice_pl_og
+#: model:account.payment.term,name:account_invoice_pl_og.account_payment_term_30
+#: model:account.payment.term,note:account_invoice_pl_og.account_payment_term_30
+msgid "Within 30 Days"
+msgstr "30 dni od daty faktury"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:45
+#, python-format
+msgid "Koryguj cenę"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "…................................"
+msgstr "…................................"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Supplier:"
+msgstr "Dostawca:"
+
+#. module: account_invoice_pl_og
+#: field:product.product,pkwiu:0
+msgid "Nr PKWiU"
+msgstr "Nr PKWiU"
+
+#. module: account_invoice_pl_og
+#: model:account.payment.term,name:account_invoice_pl_og.account_payment_term_7
+#: model:account.payment.term,note:account_invoice_pl_og.account_payment_term_7
+msgid "Within 7 Days"
+msgstr "7 dni od daty faktury"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "PRO-FORMA Invoice"
+msgstr "Faktura PRO-FORMA"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:70
+#, python-format
+msgid "Original invoice %s already has refund %s !"
+msgstr "Pierwotna faktura %s już jest korygowana przez %s !"
+
+#. module: account_invoice_pl_og
+#: field:account.invoice.tax,total_amount:0
+msgid "Total"
+msgstr "Suma"
+
+#. module: account_invoice_pl_og
+#: view:account.invoice.refund:0
+msgid "Koryguj cenę: Zostanie utworzony projekt faktury korygującej z ceną 0. Wprowadź cenę, o którą chcesz zmniejszyć cenę z faktury oryginalnej."
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Disc. %"
+msgstr "Rab. %"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Invoice date:"
+msgstr "Data faktury"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:62
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:66
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:70
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:110
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:112
+#, python-format
+msgid "Error !"
+msgstr "Błąd !"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:148
+#, python-format
+msgid "No Period found on Invoice!"
+msgstr "Brak okresu na fakturze!"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "To pay:"
+msgstr "Do zapłaty:"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:45
+#, python-format
+msgid "Korekta do zera i nowa faktura"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Date and sign"
+msgstr "Data i podpis"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "VAT Value"
+msgstr "Wartość VAT"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Oryginał / Kopia"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "After refund"
+msgstr "Po korekcie"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Quantity"
+msgstr "Ilość"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Total after refund:"
+msgstr "Suma po korekcie:"
+
+#. module: account_invoice_pl_og
+#: view:account.invoice.refund:0
+msgid "Koryguj ilość: Zostanie utworzony projekt faktury korygującej z ilością 0. Wprowadź ilość, o którą chcesz zmniejszyć ilość z faktury oryginalnej."
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "To return:"
+msgstr "Do zwrotu:"
+
+#. module: account_invoice_pl_og
+#: help:account.invoice,original_inv_id:0
+msgid "Invoice number of which this refund is based on."
+msgstr "Faktura dla której tworzymy niniejszą korektę"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:62
+#: code:addons/account_invoice_pl_og/account_pl_invoice.py:66
+#, python-format
+msgid "Refund invoice has to point to original invoice. Select Base Invoice No !"
+msgstr "Korekta faktury musi wskazywać na fakturę pierwotną (korygowaną). Wybierz fakturę korygowaną !"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Line"
+msgstr "Pozycja"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Fiscal position:"
+msgstr "Obszar podatkowy:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Description:"
+msgstr "Opis:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "In word ("
+msgstr "Słownie ("
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_account_tax
+msgid "account.tax"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: help:account.invoice.line,invoice_line_gross:0
+msgid "Gross of invoice line."
+msgstr "Kwota brutto pozycji w fakturze."
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "PKWiU No:"
+msgstr "Nr PKWiU:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Unit price"
+msgstr "Cena jedn."
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Date due:"
+msgstr "Termin płatności:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Total:"
+msgstr "Suma:"
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_account_invoice_refund
+msgid "Invoice Refund"
+msgstr "Korekta"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Sale month:"
+msgstr "Miesiąc sprzedaży:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "for invoice"
+msgstr "do faktury"
+
+#. module: account_invoice_pl_og
+#: model:ir.module.module,shortdesc:account_invoice_pl_og.module_meta_information
+msgid "Poland - Localisation stuff"
+msgstr "Polska - lokalizacja funkcji księgowych"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "VAT No:"
+msgstr "NIP:"
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_product_product
+msgid "Product"
+msgstr "Produkt"
+
+#. module: account_invoice_pl_og
+#: help:res.partner.address,post:0
+msgid "Jeśli inna niż Miasto"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: model:account.payment.term,name:account_invoice_pl_og.account_payment_term_14
+#: model:account.payment.term,note:account_invoice_pl_og.account_payment_term_14
+msgid "Within 14 Days"
+msgstr "14 dni od daty faktury"
+
+#. module: account_invoice_pl_og
+#: help:account.invoice.line,invoice_line_tax:0
+msgid "Tax of invoice line."
+msgstr "Podatek pozycji faktury"
+
+#. module: account_invoice_pl_og
+#: field:account.invoice,original_inv_id:0
+msgid "Refunded Invoice"
+msgstr "Faktura korygowana"
+
+#. module: account_invoice_pl_og
+#: view:account.invoice.refund:0
+msgid "Korekta do zera i nowa faktura: Zostanie utworzona, zatwierdzona i uzgodniona faktura korygująca do zera i projekt nowej faktury z tymi samymi danymi do ponownego wystawienia."
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_res_partner_address
+msgid "Partner Addresses"
+msgstr "Adresy partnera"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Credit Note No"
+msgstr "Faktura VAT korygująca nr"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Draft Invoice"
+msgstr "Projekt faktury"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "of invoice receiver"
+msgstr "odbiorcy faktury"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "to invoice"
+msgstr "do faktury"
+
+#. module: account_invoice_pl_og
+#: model:ir.actions.report.xml,name:account_invoice_pl_og.account_invoices_pl
+msgid "Faktury"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Invoice No"
+msgstr "Faktura VAT nr"
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_account_invoice_tax
+msgid "Invoice Tax"
+msgstr "Podatek"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "…...................................."
+msgstr "….................................."
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "After refund:"
+msgstr "Po korekcie:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "VAT des."
+msgstr "VAT"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Draft Credit Note No (not set yet)"
+msgstr "Projekt faktury korygującej nr (nie nadany)"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:147
+#, python-format
+msgid "Data Insufficient !"
+msgstr "Brak części danych !"
+
+#. module: account_invoice_pl_og
+#: field:res.partner.address,post:0
+msgid "Poczta"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Subtotal"
+msgstr "Wartość"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Customer:"
+msgstr "Nabywca:"
+
+#. module: account_invoice_pl_og
+#: field:account.invoice.line,invoice_line_tax:0
+msgid "Tax"
+msgstr "Podatek"
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Pozycja faktury"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:112
+#, python-format
+msgid "Can not %s invoice which is already reconciled, invoice should be unreconciled first. You can only Refund this invoice"
+msgstr "Nie można %s faktury, która jest już uzgodniona. Trzeba najpierw skasować uzgodnienie. Jeśli chcesz, to możesz tę utworzyć korektę do tej faktury."
+
+#. module: account_invoice_pl_og
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Błąd ! Niedozwolony kod EAN"
+
+#. module: account_invoice_pl_og
+#: model:ir.model,name:account_invoice_pl_og.model_account_invoice
+msgid "Invoice"
+msgstr "Faktura"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Payment term:"
+msgstr "Warunki płatności:"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "of invoice issuer"
+msgstr "wystawcy faktury"
+
+#. module: account_invoice_pl_og
+#: report:account_invoice_pl_og.invoice_cirrus:0
+msgid "Order No:"
+msgstr "Nr zamówienia:"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:46
+#, python-format
+msgid "Nie można korygować faktur uzgodnionych. Korekta ilości pozwoli ci wprowadzić ilość, o którą będzie pomniejszona ilość oryginalna. Korekta ceny pozwoli ci wprowadzić różnice, o jaką ma być pomniejszona cena oryginalna. 'Do zera' oznacza korektę całej wartości faktury. Do korygowania podatku lub upustu stosuj korektę do zera."
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:44
+#, python-format
+msgid "Koryguj ilość"
+msgstr ""
+
+#. module: account_invoice_pl_og
+#: view:account.invoice:0
+msgid "Print Invoice"
+msgstr "Drukuj fakturę"
+
+#. module: account_invoice_pl_og
+#: code:addons/account_invoice_pl_og/wizard/account_invoice_refund.py:44
+#, python-format
+msgid "Korekta do zera"
+msgstr ""
+
+#~ msgid "Refund by Quantity"
+#~ msgstr "Koryguj ilość"
+#~ msgid "Refund by Value"
+#~ msgstr "Koryguj wartość"
+#~ msgid "Full Refund and New"
+#~ msgstr "Korekta do zera i nowa faktura"
+#~ msgid "Invoices"
+#~ msgstr "Faktury"
+#~ msgid "Refund to Cancel"
+#~ msgstr "Korekta do zera"
+#~ msgid "Full Refund"
+#~ msgstr "Korekta do zera i nowa faktura"
+#~ msgid "7 dni od daty faktury"
+#~ msgstr "7 dni od daty faktury"
+#~ msgid "30 dni od daty faktury"
+#~ msgstr "30 dni od daty faktury"
+
+#, fuzzy
+#~ msgid "14 dni od daty faktury"
+#~ msgstr "do faktury"
+#~ msgid "Tax Code"
+#~ msgstr "Rejestr podatku"
+#~ msgid "Company"
+#~ msgstr "Firma"
+#~ msgid "The inverse rate of the currency to the currency of rate 1"
+#~ msgstr "Kurs odwrotny waluty do waluty o kursie 1"
+#~ msgid "Select period"
+#~ msgstr "Wybierz okres"
+#~ msgid "Overdue Payments"
+#~ msgstr "Przeterminowane płatności"
+#~ msgid ""
+#~ "Period for tax accounting (when different than period for financial "
+#~ "accounting)"
+#~ msgstr ""
+#~ "Okres do księgowania podatku (jeśli jest inny niż do księgowania "
+#~ "bilansowego)"
+#~ msgid "Inverse Rate"
+#~ msgstr "Kurs odwrotny"
+#~ msgid "Currency"
+#~ msgstr "Waluta"
+#~ msgid "Overdue Payments Message"
+#~ msgstr "Komunikat o przeterminowanych płatnościach"
+#~ msgid "Invoice register"
+#~ msgstr "Rejestr faktur"
+#~ msgid "Rejestr zakupu i sprzedazy"
+#~ msgstr "Rejestr zakupu i sprzedaży"
+#~ msgid "Rates"
+#~ msgstr "Kursy"
+#~ msgid "Not Negative"
+#~ msgstr "Bez ujemnych wartości"
+#~ msgid "Tax Period"
+#~ msgstr "Okres dla podatku"
+#~ msgid "Companies"
+#~ msgstr "Firmy"
+#~ msgid ""
+#~ "Check if Tax Code should be 0 when value is negative. This feature "
+#~ "concerns localized VAT declaration only."
+#~ msgstr ""
+#~ "Zaznacz, jeśli rejestr powinien mieć wartość 0 zamiast wartości ujemnych. "
+#~ "Dotyczy tylko wydruku deklaracji VAT."
+#~ msgid "Period"
+#~ msgstr "Okres"
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
+#~ msgid "Currency Rate"
+#~ msgstr "Kurs waluty"
+#~ msgid "Account Entry"
+#~ msgstr "Zapis"
+#~ msgid "Accounting"
+#~ msgstr "Księgowość"
+#~ msgid "Tax Code Template"
+#~ msgstr "Szablon rejestru podatkowego"
+#~ msgid "Supplier Invoice"
+#~ msgstr "Faktura od dostawcy"
+#~ msgid "Can not refund draft/proforma/cancel invoice."
+#~ msgstr "Nie można korygować faktury w stanie Projekt/Pro-Forma/Anulowano."
+#~ msgid "Supplier Refund"
+#~ msgstr "Korekta od dostawcy"
+#~ msgid "Refund invoice can not be fully refunded."
+#~ msgstr "Faktura korygująca nie może być korygowana do zera tą funkcją."
+#~ msgid "Refund Invoice Options"
+#~ msgstr "Opcje kordygowania"
+#~ msgid "Refund"
+#~ msgstr "Korekta"
+#~ msgid "Print VAT-7 Decl."
+#~ msgstr "Drukuj deklarację VAT-7"
+#~ msgid ""
+#~ "This date will be used as the invoice date for Refund Invoice and Period "
+#~ "will be chosen accordingly!"
+#~ msgstr ""
+#~ "Ta data będzie stosowana jako data faktury korygującej i okres zostanie "
+#~ "wybrany odpowiednio do tej daty !"
+#~ msgid "Operation date"
+#~ msgstr "Data operacji"
+#~ msgid "Invalid XML for View Architecture!"
+#~ msgstr "Niedozwolony XML do architektury widoku !"
+#~ msgid "Credit Note"
+#~ msgstr "Korekta"
+#~ msgid "Force period"
+#~ msgstr "Wymuś okres"
+#~ msgid "Description"
+#~ msgstr "Opis"
+#~ msgid "Are you sure you want to refund this invoice ?"
+#~ msgstr "Jesteś pewna, że chcesz korygować tę fakturę ?"
+#~ msgid "........."
+#~ msgstr "........."
+

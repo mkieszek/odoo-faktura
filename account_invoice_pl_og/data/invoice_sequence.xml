@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate = "1">
+<!--        <delete model="ir.sequence" search = "[(’name’,’=’,’Sale Order’)]" />   nie działa -->
+        <record id="account.seq_out_invoice" model="ir.sequence">
+            <field name="name">Faktura sprzedaży FS</field>
+            <field name="code">account.invoice.out_invoice</field>
+            <field name="prefix">FS-</field>
+            <field name="padding">4</field>
+            <field name="suffix">-%(year)s</field>
+        </record>
+
+        <record id="account.seq_in_invoice" model="ir.sequence">
+            <field name="name">Faktura zakupu FZ</field>
+            <field name="code">account.invoice.in_invoice</field>
+            <field name="prefix">FZ-</field>
+            <field name="padding">4</field>
+            <field name="suffix">-%(year)s</field>
+        </record>
+
+        <record id="account.seq_out_refund" model="ir.sequence">
+            <field name="name">Korekta faktury sprzedaży FSK</field>
+            <field name="code">account.invoice.out_refund</field>
+            <field name="prefix">FSK-</field>
+            <field name="padding">4</field>
+            <field name="suffix">-%(year)s</field>
+        </record>
+
+        <record id="account.seq_in_refund" model="ir.sequence">
+            <field name="name">Korekta faktury zakupu FZK</field>
+            <field name="code">account.invoice.in_refund</field>
+            <field name="prefix">FZK-</field>
+            <field name="padding">4</field>
+            <field name="suffix">-%(year)s</field>
+        </record>
+
+    </data>
+</openerp>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    #---------------------------------------------------------
+    # Original invoice num
+    #---------------------------------------------------------
+<!--  -->
+    <record model="ir.ui.view" id="view_account_pl_invoice_form">
+        <field name="name">account.invoice.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <button name="invoice_print" position="replace" >
+              <button name='%(account_invoices_pl)d' string="Print Invoice" class="oe_highlight" groups="base.group_user" type="action" />
+            </button>
+            <field name="move_id" position="after">
+                <field name="original_inv_id"/>
+            </field>
+            
+            <field name="price_subtotal" position="after">
+                <field name="invoice_line_tax"/>
+                <field name="invoice_line_gross"/>
+            </field>
+        </field>
+    </record>
+<!--  -->
+    <record model="ir.ui.view" id="view_account_pl_invoice_supplier_form">
+        <field name="name">account.invoice.supplier.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <field name="move_id" position="after">
+                <field name="original_inv_id"/>
+            </field>
+        </field>
+    </record>
+
+<!--  -->
+    <record model="ir.ui.view" id="view_account_pl_invoice_line_tree">
+        <field name="name">account.invoice.line.tree</field>
+        <field name="model">account.invoice.line</field>
+        <field name="inherit_id" ref="account.view_invoice_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="price_subtotal" position="after">
+                <field name="invoice_line_tax"/>
+                <field name="invoice_line_gross"/>
+            </field>
+        </field>
+    </record>
+<!--  -->
+        <record id="invoice_supplier_form_pl" model="ir.ui.view">
+            <field name="name">account.invoice.supplier.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+            	<field name="price_subtotal" position="after">
+                	<field name="invoice_line_tax"/>
+                	<field name="invoice_line_gross"/>
+            	</field>
+            </field>
+    	</record>
+
+
+<!--      -->
+    <record model="ir.ui.view" id="view_account_pl_invoice_tree">
+        <field name="name">account.invoice.tree</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="arch" type="xml">
+            <field name="number" position="after">
+                <field name="original_inv_id"/>
+            </field>
+        </field>
+    </record>
+
+
+
+</data>
+</openerp>
