@@ -25,10 +25,10 @@
 ##############################################################################
 
 import time
-from report import report_sxw
+from openerp.report import report_sxw
 
-from osv import osv, fields
-from tools.translate import _
+from openerp.osv import osv, fields
+from openerp.tools.translate import _
 from operator import itemgetter, attrgetter
 from invoice_parser import Parser
 

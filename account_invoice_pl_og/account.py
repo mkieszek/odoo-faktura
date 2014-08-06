@@ -24,10 +24,10 @@
 #
 ##############################################################################
 
-from osv import osv, fields
-from tools import config
+from openerp.osv import osv, fields
+from openerp.tools import config
 import time
-from tools.translate import _
+from openerp.tools.translate import _
 #import netsvc
 
 

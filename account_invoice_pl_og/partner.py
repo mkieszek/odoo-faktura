@@ -24,9 +24,9 @@
 #
 ##############################################################################
 
-from osv import fields,osv
+from openerp.osv import fields,osv
 import os
-import tools
+import openerp.tools
 
 class res_partner(osv.osv):
     _inherit = 'res.partner'

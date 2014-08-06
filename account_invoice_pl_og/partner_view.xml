@@ -25,9 +25,9 @@
             <field name="inherit_id" ref="base.view_partner_tree"/>
             <field eval="16" name="priority"/>
             <field name="arch" type="xml">
-                <field name="name" position="replace">
+                <field name="display_name" position="replace">
                     <field name="ref"/>
-                    <field name="name"/>
+                    <field name="display_name"/>
                     <field name="vat"/>
                     <field name="city"/>
                 </field>

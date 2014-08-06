@@ -24,13 +24,13 @@
 #
 ##############################################################################
 
-from osv import osv, fields
-from tools import config
+from openerp.osv import osv, fields
+from openerp.tools import config
 import time
-from tools.translate import _
+from openerp.tools.translate import _
 
 class product_product(osv.osv):
-    _inherit = 'product.product'
+    _inherit = 'product.template'
     _columns = {
                 'pkwiu': fields.char("Nr PKWiU", size=32, )
                 }
