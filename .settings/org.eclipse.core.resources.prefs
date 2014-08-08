@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//account_invoice_pl_og/report/invoice.py=utf-8
+encoding//account_invoice_pl_og/report/invoice_parser.py=utf-8
+encoding//print_receipt/reports/account_voucher.py=utf-8
