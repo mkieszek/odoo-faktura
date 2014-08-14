@@ -11,17 +11,8 @@ class Parser(report_sxw.rml_parse):
         self.localcontext.update({
                                   'time': time,
                                   'getLines': self._lines_get,
-                                  'blank_line' : self.blank_line,
                                   })
         self.context = context
-           #generate blank lines/line break
-    def blank_line(self, nlines):
-       res = ""
-       pdb.set_trace()
-       for i in range(nlines - self.line_no):
-          res = res + '\n'
-       return res
-   
    
     
     def _lines_get(self, voucher):
