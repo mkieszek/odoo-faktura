@@ -25,5 +25,5 @@ class Parser(report_sxw.rml_parse):
  
 report_sxw.report_sxw('report.account_voucher', 'account.voucher',
                       'addons/print_receipt/reports/account_voucher.rml',
-                      parser=Parser)
+                      parser=Parser, header=False)
         

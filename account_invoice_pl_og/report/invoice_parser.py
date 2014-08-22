@@ -33,7 +33,6 @@ from operator import itemgetter, attrgetter
 import pdb
 
 def num2word(n,l="en_US"):
-    pdb.set_trace()
 #    wordtable = ["zer","jed","dwa","trz","czt","pie","sze","sie","osi","dzi"]
     sym={
         "en_US": {
@@ -124,7 +123,6 @@ class Parser(report_sxw.rml_parse):
 
 
     def get_word(self, r, l="pl_PL",*args):
-        pdb.set_trace()
         n= int(r)
         cents = " " +str(int(round((r - n) * 100))) +"/100"
 
