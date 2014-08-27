@@ -81,7 +81,7 @@ class account_invoice(osv.osv):
                 for tax in tax_obj.compute(cr, uid, line.invoice_line_tax_id, u_price, line.quantity, line.product_id, invoice.partner_id):
 #                    tax_value = abs(tax['amount'])
                     tax_value = tax['amount']
-                line.write({'invoice_line_tax': tax_value,'invoice_line_gross': tax_value + line.price_subtotal}, context=context)
+                line.write({'invoice_line_tax': tax_value,'invoice_line_gross': tax_value + line.price_subtotal})
         return True
 
 
