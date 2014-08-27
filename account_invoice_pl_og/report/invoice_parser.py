@@ -122,7 +122,6 @@ class Parser(report_sxw.rml_parse):
 
 
     def get_word(self, r, l="pl_PL",*args):
-        pdb.set_trace()
         n= int(r)
         cents = " " +str(int(round((r - n) * 100))) +"/100"
 
