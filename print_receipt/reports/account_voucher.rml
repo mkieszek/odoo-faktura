@@ -179,7 +179,7 @@
           <para style="P17">SposĂłb zapĹ‚aty:</para>
         </td>
         <td>
-          <para style="P16">[[(voucher.payment_method)]]</para>
+          <para style="P16">[[(voucher.payment_method_id.name)]]</para>
         </td>
         <td>
           <para style="P17">termin zapĹ‚aty:</para>
@@ -245,7 +245,7 @@
             <para style="P11">[[ line['quantity'] ]]</para>
           </td>
           <td>
-            <para style="P11">[[ line['measure'] ]]</para>
+            <para style="P11">[[ line['measure_id.name'] ]]</para>
           </td>
           <td>
             <para style="P11">[[ line['gross_amount'] ]]<font face="Helvetica">[[ company.currency_id.symbol ]]</font></para>
@@ -288,7 +288,7 @@
           <para style="P24">[[ voucher.num_to_word ]]</para>
         </td>
       </tr>
-    </blockTable><spacer length="30"/>
+    </blockTable><para style="P24">Uwagi: [[ voucher.narration ]]</para><spacer length="45"/>
     <blockTable colWidths="371.0,167.0" style="Table5">
       <tr>
         <td>
