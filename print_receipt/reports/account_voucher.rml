@@ -99,7 +99,9 @@
     <paraStyle name="P6" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P7" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P8" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P81" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P91" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P10" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P11" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="RIGHT"/>
@@ -140,7 +142,7 @@
         <td>
           <para><seqReset/></para>
           <para style="P18">[[repeatIn(objects,'voucher')]]</para>
-          <para style="P9">Data sprzedaży: [[ formatLang(voucher.date,date=True) ]]</para>
+          <para style="P9">Data sprzedaĹĽy: [[ formatLang(voucher.date,date=True) ]]</para>
           <para style="P25">RACHUNEK nr [[ (voucher.state == 'posted' or removeParentNode('para')) and voucher.number ]]</para>
           <para style="P25">RACHUNEK nr [[ (voucher.state == 'cancel' or removeParentNode('para')) and 'Cancelled' ]]</para>
           <para style="P25">RACHUNEK nr [[ (voucher.state == 'draft' or removeParentNode('para')) and 'Draft' ]]</para>
@@ -148,7 +150,7 @@
       </tr>
       <tr>
         <td>
-          <para style="P2">ORYGINAŁ / KOPIA</para>
+          <para style="P2">ORYGINAĹ� / KOPIA</para>
         </td>
       </tr>
     </blockTable><spacer length="12"/>
@@ -162,9 +164,9 @@
         </td>
         <td>
           <para style="P12">Nabywca:</para>
-          <para style="P8">[[ ( voucher.partner_id.name ) ]]</para>
-          <para style="P9">[[ display_address(voucher.partner_id) ]]</para>
-          <para style="P9">[[ ( voucher.partner_id.vat ) ]]</para>
+          <para style="P81">[[ ( voucher.partner_id.name ) ]]</para>
+          <para style="P91">[[ display_address(voucher.partner_id) ]]</para>
+          <para style="P91">[[ ( voucher.partner_id.vat ) ]]</para>
         </td>
       </tr>
     </blockTable><spacer length="10"/>
@@ -174,13 +176,13 @@
     <blockTable colWidths="108.0,174.0,122.0,135.0" style="Tabela3">
       <tr>
         <td>
-          <para style="P17">Sposób zapłaty:</para>
+          <para style="P17">SposĂłb zapĹ‚aty:</para>
         </td>
         <td>
           <para style="P16">[[(voucher.payment_method)]]</para>
         </td>
         <td>
-          <para style="P17">termin zapłaty:</para>
+          <para style="P17">termin zapĹ‚aty:</para>
         </td>
         <td>
           <para style="P16">[[(voucher.payment_date)]]</para>
@@ -213,10 +215,10 @@
           <para style="P11">L.p.</para>
         </td>
         <td>
-          <para style="P11">Nazwa towaru/usługi</para>
+          <para style="P11">Nazwa towaru/usĹ‚ugi</para>
         </td>
         <td>
-          <para style="P11">Ilość</para>
+          <para style="P11">IloĹ›Ä‡</para>
         </td>
         <td>
           <para style="P11">j.m</para>
@@ -225,7 +227,7 @@
           <para style="P11">Cena jedn. brutto</para>
         </td>
         <td>
-          <para style="P11">Wartość brutto towaru / usługi</para>
+          <para style="P11">WartoĹ›Ä‡ brutto towaru / usĹ‚ugi</para>
         </td>
       </tr>
     </blockTable>
@@ -262,7 +264,7 @@
           </para>
         </td>
         <td>
-          <para style="P20">Kwota należności ogółem:</para>
+          <para style="P20">Kwota naleĹĽnoĹ›ci ogĂłĹ‚em:</para>
         </td>
         <td>
           <para style="P20">[[ formatLang(voucher.amount,2) ]] [[ company.currency_id.symbol ]]</para>
@@ -272,7 +274,7 @@
     <blockTable colWidths="89.0,449.0" style="Tabela4">
       <tr>
         <td>
-          <para style="P23">Do zapłaty:</para>
+          <para style="P23">Do zapĹ‚aty:</para>
         </td>
         <td>
           <para style="P23">[[formatLang(voucher.amount,2)]] [[ company.currency_id.symbol ]].</para>
@@ -280,7 +282,7 @@
       </tr>
       <tr>
         <td>
-          <para style="P24">Słownie:</para>
+          <para style="P24">SĹ‚ownie:</para>
         </td>
         <td>
           <para style="P24">[[ voucher.num_to_word ]]</para>
@@ -290,7 +292,7 @@
     <blockTable colWidths="371.0,167.0" style="Table5">
       <tr>
         <td>
-          <para style="P10">Oświadczam, że nie jestem płatnikiem podatku VAT</para>
+          <para style="P10">OĹ›wiadczam, ĹĽe nie jestem pĹ‚atnikiem podatku VAT</para>
         </td>
         <td>
           <para style="P10">
@@ -305,7 +307,7 @@
           </para>
         </td>
         <td>
-        	<para style="P14">Podpis osoby upoważnionej</para> 
+        	<para style="P14">Podpis osoby upowaĹĽnionej</para> 
         </td>
       </tr>
     </blockTable>

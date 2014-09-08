@@ -8,6 +8,6 @@
         model="account.voucher" 
         name="account_voucher" 
         rml="print_receipt/reports/account_voucher.rml" 
-        string="Receipt/Payment"/>
+        string="Paragon / Płatność"/>
     </data>
 </openerp>
