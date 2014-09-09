@@ -110,7 +110,7 @@
     <paraStyle name="P14" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="20.0"/>
     <paraStyle name="P15" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P16" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
-    <paraStyle name="P17" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="10.0" leading="13"/>
     <paraStyle name="P18" fontName="Helvetica" fontSize="10.0" leading="13"/>
     <paraStyle name="P19" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P20" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="CENTER"/>
@@ -175,33 +175,21 @@
     <para style="P16">
       <font color="white"> </font>
     </para>
-    <blockTable colWidths="108.0,174.0,122.0,135.0" style="Tabela3">
+    <blockTable colWidths="282.0,257.0" style="Tabela3">
       <tr>
         <td>
-          <para style="P17">Sposób zapłaty:</para>
+          <para style="P17">Sposób zapłaty: [[ (voucher.payment_method_id.name != False or removeParentNode('para')) and voucher.payment_method_id.name]]</para>
         </td>
         <td>
-          <para style="P16">[[(voucher.payment_method_id.name)]]</para>
-        </td>
-        <td>
-          <para style="P17">termin zapłaty: </para>
-        </td>
-        <td>
-          <para style="P16">[[(voucher.payment_date)]]</para>
+          <para style="P17">Termin zapłaty: [[(voucher.payment_date != False or removeParentNode('para')) and voucher.payment_date]]</para>
         </td>
       </tr>
       <tr>
         <td>
-          <para style="P17">BANK:</para>
+          <para style="P17">BANK: [[(voucher.bank_account_id.bank_name != False or removeParentNode('para')) and voucher.bank_account_id.bank_name]]</para>
         </td>
         <td>
-          <para style="P16">[[(voucher.bank_account_id.bank_name)]]</para>
-        </td>
-        <td>
-          <para style="P17">Nr konta:</para>
-        </td>
-        <td>
-          <para style="P16">[[(voucher.bank_account_id.acc_number)]]</para>
+          <para style="P17">Nr konta:[[(voucher.bank_account_id.acc_number != False or removeParentNode('para')) and voucher.bank_account_id.acc_number]]</para>
         </td>
       </tr>
     </blockTable><spacer length="17"/>
@@ -290,7 +278,15 @@
           <para style="P24">[[ voucher.num_to_word ]]</para>
         </td>
       </tr>
-    </blockTable><para style="P24">Uwagi: [[ voucher.narration ]]</para><spacer length="45"/>
+		<tr>
+        <td>
+          <para style="P24">Uwagi:</para>
+        </td>
+        <td>
+          <para style="P24">[[ voucher.narration ]]</para>
+        </td>
+      </tr>
+    </blockTable><spacer length="45"/>
     <blockTable colWidths="371.0,167.0" style="Table5">
       <tr>
         <td>
