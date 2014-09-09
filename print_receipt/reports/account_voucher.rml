@@ -140,6 +140,7 @@
         <td>
           <para><seqReset/></para>
           <para style="P18">[[repeatIn(objects,'voucher')]]</para>
+          <para style="P18">[[ setLang(voucher.partner_id.lang)]]</para>
           <para style="P9">Data sprzedaży: [[ formatLang(voucher.date,date=True) ]]</para>
           <para style="P25">RACHUNEK nr [[ (voucher.state == 'posted' or removeParentNode('para')) and voucher.number ]]</para>
           <para style="P25">RACHUNEK nr [[ (voucher.state == 'cancel' or removeParentNode('para')) and 'Cancelled' ]]</para>
@@ -243,7 +244,7 @@
             <para style="P11">[[ line['quantity'] ]]</para>
           </td>
           <td>
-            <para style="P11">[[ line['measure_id.name'] ]]</para>
+            <para style="P11">[[ line['measure_name'] ]]</para>
           </td>
           <td>
             <para style="P11">[[ line['gross_amount'] ]]<font face="Helvetica">[[ company.currency_id.symbol ]]</font></para>
