@@ -99,10 +99,13 @@
     <paraStyle name="P6" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P7" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P8" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P8l" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P9" fontName="Helvetica" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P9l" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P10" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P11" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P12" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P12l" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="LEFT"/>
     <paraStyle name="P13" fontName="Helvetica-Bold" fontSize="18.0" leading="22" alignment="CENTER"/>
     <paraStyle name="P14" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="20.0"/>
     <paraStyle name="P15" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
@@ -162,10 +165,10 @@
           <para style="P7">[[ company.partner_id.vat ]]</para>
         </td>
         <td>
-          <para style="P12">Nabywca:</para>
-          <para style="P8">[[ ( voucher.partner_id.name ) ]]</para>
-          <para style="P9">[[ display_address(voucher.partner_id) ]]</para>
-          <para style="P9">[[ ( voucher.partner_id.vat ) ]]</para>
+          <para style="P12l">Nabywca:</para>
+          <para style="P8l">[[ ( voucher.partner_id.name ) ]]</para>
+          <para style="P9l">[[ display_address(voucher.partner_id) ]]</para>
+          <para style="P9l">[[ ( voucher.partner_id.vat ) ]]</para>
         </td>
       </tr>
     </blockTable><spacer length="10"/>
@@ -181,7 +184,7 @@
           <para style="P16">[[(voucher.payment_method_id.name)]]</para>
         </td>
         <td>
-          <para style="P17">termin zapłaty:</para>
+          <para style="P17">termin zapłaty: </para>
         </td>
         <td>
           <para style="P16">[[(voucher.payment_date)]]</para>
@@ -214,7 +217,7 @@
           <para style="P11">L.p.</para>
         </td>
         <td>
-          <para style="P11">Nazwa towaru/usługi</para>
+          <para style="P11">Nazwa towaru/usługi: </para>
         </td>
         <td>
           <para style="P11">Ilość</para>
