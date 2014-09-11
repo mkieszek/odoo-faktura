@@ -181,7 +181,7 @@
           <para style="P17">Sposób zapłaty: [[ (voucher.payment_method_id.name != False or removeParentNode('para')) and voucher.payment_method_id.name]]</para>
         </td>
         <td>
-          <para style="P17">Termin zapłaty: [[(voucher.payment_date != False or removeParentNode('para')) and voucher.payment_date]]</para>
+          <para style="P17">Termin zapłaty: [[(voucher.date_due != False or removeParentNode('para')) and voucher.date_due]]</para>
         </td>
       </tr>
       <tr>
