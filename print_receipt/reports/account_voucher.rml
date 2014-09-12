@@ -189,7 +189,7 @@
           <para style="P17">BANK: [[(voucher.bank_account_id.bank_name != False or removeParentNode('para')) and voucher.bank_account_id.bank_name]]</para>
         </td>
         <td>
-          <para style="P17">Nr konta:[[(voucher.bank_account_id.acc_number != False or removeParentNode('para')) and voucher.bank_account_id.acc_number]]</para>
+          <para style="P17">Nr konta: [[(voucher.bank_account_id.acc_number != False or removeParentNode('para')) and voucher.bank_account_id.acc_number]]</para>
         </td>
       </tr>
     </blockTable><spacer length="17"/>
