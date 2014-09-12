@@ -563,17 +563,17 @@
           <para style="terp_default_Right_9">[[ not o.state in ('proforma','proforma2') and formatLang( abs( o.residual )) or '' ]]</para>
         </td>
       </tr>
-    </blockTable>
+    </blockTable><spacer length="25"/>
     <para style="Standard">
       <font color="white"> </font>
     </para>
     <blockTable colWidths="530.0" style="Tabela2">
       <tr>
         <td>
-          <para style="terp_default_9">In word ( [[ o.currency_id.name ]] ): [[ num2word( not o.state in ('proforma','proforma2') and o.residual or tot['new_amount_total'] or 0, o.partner_id.lang or 'en_US') ]]</para>
+          <para style="terp_default_9">Słownie: [[ o.num_to_word ]]</para>
         </td>
       </tr>
-    </blockTable>
+    </blockTable><spacer length="60"/>
     <para style="Standard">
       <font color="white"> </font>
     </para>
