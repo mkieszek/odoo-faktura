@@ -9,5 +9,13 @@
         name="account_voucher" 
         rml="print_receipt/reports/account_voucher.rml" 
         string="Paragon / Płatność"/>
+        
+        <report 
+        auto="False" 
+        id="schedure_print" 
+        model="neo.credit" 
+        name="schedule_print" 
+        rml="print_receipt/reports/schedule_print.rml" 
+        string="Harmonogram spłat"/>
     </data>
 </openerp>
