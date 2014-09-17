@@ -16,7 +16,6 @@ class Parser(report_sxw.rml_parse):
    
     
     def _lines_get(self, voucher):
-        pdb.set_trace()
         voucherline_obj = pooler.get_pool(self.cr.dbname).get('account.voucher.line')
         voucherlines = voucherline_obj.search(self.cr, self.uid,[('voucher_id','=',voucher.id)])
         voucherlines = voucherline_obj.browse(self.cr, self.uid, voucherlines)

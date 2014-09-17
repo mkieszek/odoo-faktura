@@ -75,7 +75,7 @@
       <font color="white"> </font>
     </para><spacer length="70"/>
     <para style="P3">HARMONOGRAM SPŁAT POŻYCZKI </para>
-    <para style="P3">GOTÓWKOWEJ NR 123</para>
+    <para style="P3">GOTÓWKOWEJ NR [[credit.name]]</para>
     <para style="P3">
       <font color="white"> </font>
     </para>
@@ -94,7 +94,7 @@
     <para style="P4">
       <font color="white"> </font>
     </para><spacer length="70"/>
-    <blockTable colWidths="42.0,73.0,81.0,105.0,111.0,123.0" style="Tabela1">
+    <blockTable colWidths="35.0,100.0,100.0,100.0,100.0,100.0" style="Tabela1">
       <tr>
         <td>
           <para style="P8">Lp.</para>
@@ -112,13 +112,13 @@
           <para style="P7">Pełna rata</para>
         </td>
         <td>
-          <para style="P7">Pozostało do spłatyy</para>
+          <para style="P7">Pozostało do spłaty</para>
         </td>
       </tr>
     </blockTable>
     <section>
       <para style="P9">[[ repeatIn(credit.schedule_ids,'a') ]]</para>
-      <blockTable colWidths="42.0,74.0,81.0,102.0,112.0,123.0" style="Tabela2">
+      <blockTable colWidths="35.0,100.0,100.0,100.0,100.0,100.0" style="Tabela2">
         <tr>
           <td>
             <para style="P6"><seq/></para>
@@ -127,16 +127,16 @@
             <para style="P5">[[a.date_rate]]</para>
           </td>
           <td>
-            <para style="P5">[[formatLang(a.repayment_credit,2)]] zł</para>
+            <para style="P5">[[formatLang(a.repayment_credit,2)]] zł.</para>
           </td>
           <td>
-            <para style="P5">[[formatLang(a.repayment_interest,2)]] zł</para>
+            <para style="P5">[[formatLang(a.repayment_interest,2)]] zł.</para>
           </td>
           <td>
-            <para style="P5">[[formatLang(a.full_installment,2)]] zł</para>
+            <para style="P5">[[formatLang(a.full_installment,2)]] zł.</para>
           </td>
           <td>
-            <para style="P5">[[formatLang(a.repay,2)]] zł</para>
+            <para style="P5">[[formatLang(a.repay,2)]] zł.</para>
           </td>
         </tr>
       </blockTable>

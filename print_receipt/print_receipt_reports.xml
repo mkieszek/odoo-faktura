@@ -16,6 +16,7 @@
         model="neo.credit" 
         name="schedule_print" 
         rml="print_receipt/reports/schedule_print.rml" 
-        string="Harmonogram spłat"/>
+        string="Harmonogram spłat"
+        header="False"/>
     </data>
 </openerp>
