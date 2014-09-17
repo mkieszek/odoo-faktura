@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <document filename="test.pdf">
-  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+  <template pageSize="(595.0,842.0)" title="Test" allowSplitting="20">
     <pageTemplate id="first">
+    	        <place x="33" y="55cm" width="530.0" height="205.0">
+                <blockTable colWidths="265" style="Table1">
+                            <tr><td><para style="normal2-center">Footer Value</para></td></tr>
+                        </blockTable>
+                    </place>
+		
       <frame id="first" x1="28.0" y1="29.0" width="539" height="784"/>
     </pageTemplate>
   </template>

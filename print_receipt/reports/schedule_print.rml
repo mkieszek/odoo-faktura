@@ -1,8 +1,13 @@
 <?xml version="1.0"?>
 <document filename="test.pdf">
-  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
-    <pageTemplate id="first">
+  <template pageSize="(595.0,842.0)" title="Test" allowSplitting="20">
+	<pageTemplate id="first">
       <frame id="first" x1="18.0" y1="29.0" width="534" height="784"/>
+		<pageGraphics>
+			<place x="550" y="-170" width="530.0" height="205.0">
+				<para style="P1"><pageNumber/></para>
+			</place>
+		</pageGraphics>
     </pageTemplate>
   </template>
   <stylesheet>
@@ -20,6 +25,11 @@
       <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
       <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
     </blockTableStyle>
+    <blockTableStyle id="Tabelax">
+      <blockAlignment value="RIGHT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,-1" stop="1,-1"/>
+    </blockTableStyle>
     <blockTableStyle id="Tabela2">
       <blockAlignment value="LEFT"/>
       <blockValign value="TOP"/>
@@ -28,7 +38,7 @@
       <paraStyle name="all" alignment="justify"/>
     </initialize>
     <paraStyle name="P1" fontName="Helvetica"/>
-    <paraStyle name="P2" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
     <paraStyle name="P3" fontName="Helvetica-Bold" fontSize="18.0" leading="22" alignment="CENTER"/>
     <paraStyle name="P4" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT"/>
     <paraStyle name="P5" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
@@ -74,8 +84,8 @@
     <para style="P1">
       <font color="white"> </font>
     </para><spacer length="70"/>
-    <para style="P3">HARMONOGRAM SPŁAT POŻYCZKI </para>
-    <para style="P3">GOTÓWKOWEJ NR [[credit.name]]</para>
+    <para style="P3">HARMONOGRAM SPŁAT POŻYCZKI</para>
+    <para style="P3">GOTÓWKOWEJ NR [[credit.name]] / [[credit.contract_date_year]]</para>
     <para style="P3">
       <font color="white"> </font>
     </para>
@@ -140,10 +150,21 @@
           </td>
         </tr>
       </blockTable>
-    </section>
-    <para style="P2">
-      <font color="white"> </font>
-    </para>
+    </section><spacer length="70"/>
+    <blockTable colWidths="400.0,135.0" style="Tabelax">
+      	<tr>
+      		<td>
+      		    <para style="P5">
+					<pageNumber/>
+			    </para>
+      		</td>
+      		<td>
+			    <para style="P2">
+			      <font color="black">Podpis Kredytobiorcy</font>
+			    </para>
+      		</td>
+		</tr>		
+    </blockTable>
     <para style="P5">
       <font color="white"> </font>
     </para>

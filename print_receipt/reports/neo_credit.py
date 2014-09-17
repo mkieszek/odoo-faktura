@@ -17,4 +17,4 @@ class Parser(report_sxw.rml_parse):
  
 report_sxw.report_sxw('report.neo_credit', 'neo.credit',
                       'addons/print_receipt/reports/schedule_print.rml',
-                      parser=Parser, header=False)
+                      parser=Parser, header='False')
