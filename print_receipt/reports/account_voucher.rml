@@ -144,6 +144,9 @@
     <images/>
   </stylesheet>
   <story>
+  <illustration width="50" height="100" borderStrokeWidth="1" borderStrokeColor="black">
+  <image x="2" y="3"  width="100" height="100" align="LEFT">[[company.logo or removeParentNode('image')]]</image>
+  </illustration>
     <blockTable colWidths="538.0" repeatRows="1" style="Tabela2">
       <tr>
         <td>
